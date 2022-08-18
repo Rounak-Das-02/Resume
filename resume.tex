@@ -2,15 +2,16 @@
 
 \usepackage[english]{babel}
 % \usepackage{mathpazo}
-% \usepackage{anyfontsize}
-% \usepackage{extsizes}
+\usepackage{anyfontsize}
+\usepackage{wrapfig}
+\usepackage{graphicx}
 \usepackage{wasysym}
 \usepackage{fontawesome5}
 \usepackage[colorlinks = true , urlcolor = black]{hyperref}
 \usepackage{setspace}
 \usepackage{xcolor}
 \usepackage{enumitem}
-\usepackage[a4paper, top = 2.5cm, bottom = 2.5cm, outer = 2.5cm, inner = 2.5cm]{geometry}
+\usepackage[a4paper, top = 1.5cm, bottom = 1.5cm, outer = 8mm, inner = 2mm]{geometry}
 \makeatletter
   \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
 \makeatother
@@ -18,147 +19,226 @@
 
 \begin{document}
 \pagestyle{empty}
-
+\rmfamily
 \begin{center}
+  %   \begin{figure}[h]
+  %     \centering
+  %     \includegraphics[scale = 0.12]{profile.jpg}
+  %     \label{fig:lamp}
+  %   \end{figure}
   \fontsize{10pt}{20pt}\selectfont
-  \rmfamily{\Huge{\textbf{Rounak Das}}} \\
-  \color{blue}{Computer Science UnderGrad} \\
+  {\LARGE \textbf{Rounak Das}} \\
+  % \color{blue}{Computer Science UnderGrad} \\
   \color{black}
   \begin{tabular}{c | c | c}
-    \phone{+91 8420865007} & \faGithub{\href{https://github.com/Rounak-Das-02}{\hspace{1mm}Rounak-Das-02}} & \faEnvelope{\hspace{1mm}dasrounak2002@gmail.com}
+    \faHome{\hspace{1mm}{Hyderabad, India}} & \faGithub{\href{https://github.com/Rounak-Das-02}{\hspace{1mm}Rounak-Das-02}} & \faEnvelope{\hspace{1mm}dasrounak2002@gmail.com}
   \end{tabular}
 \end{center}
 
-\vspace{0.5mm}
 
-\begin{flushleft}
+\color[HTML]{0F00FF}{\normalsize Education}  \color{gray}{\vhrulefill{1.5pt}}
 
-  \color[HTML]{0F00FF}{\LARGE{Education}}  \color{gray}{\vhrulefill{1.5pt}}
+\vspace{2mm}
+\color{black}
+\begin{enumerate}[label = , itemsep = 0pt, partopsep = 0pt, topsep = 0pt, leftmargin = 10mm]
+  \item
+        \footnotesize
+        \textbf{Mahindra University(Mahindra École Centrale), Hyderabad, India}  \textit{\hfill 2020-Present}
+        \begin{itemize}[label = - , topsep = 0pt]
+          \item Bachelor of Technology in Computer Science, CGPA: 8.6/10 (at present)
+        \end{itemize}
 
-  \vspace{2mm}
+        \textbf{St.Augustine's Day School, Shyamnagar, India}  \textit{\hfill 2018-2020}
+        \begin{itemize}[label = - , topsep = 1pt]
+          \item Indian School Certificate (XII-2020), 97.5\%
+          \item Indian Certificate for Secondary Education (X-2018), 95.4\%
+        \end{itemize}
+\end{enumerate}
+
+
+\color[HTML]{0F00FF}{\normalsize Skills}  \color{gray}{\vhrulefill{1.5pt}}
+\footnotesize
+
+\vspace{2mm}
+
+\begin{enumerate}[label = , topsep = 0pt, partopsep = 0pt]
+  \item
+        \color{black}
+        \textbf{Languages }: C/C++, Python, Java, Javascript
+
+        \textbf{Platforms and Tools }: MERN, tailwindCSS, Git, Linux, MySQL
+\end{enumerate}
+
+\vspace{3mm}
+
+\color[HTML]{0F00FF}{\normalsize  Selected Projects}  \color{gray}{\vhrulefill{1.5pt}}
+\footnotesize
+
+\vspace{2mm}
+\color{black}
+\begin{enumerate}[label =, itemsep = 2mm, topsep = 0pt, partopsep = 0pt]
+
+  \item
+        \textbf{Robocon 2022}:
+        \begin{itemize}[label = - , topsep = 0pt, partopsep = 0pt]
+          \item \textit{Theme : Lagori} - Developed two physical robots, one which shoots balls and another which piles up lagoris (big discs). Programmed and designed all electronics, custom PCBs, drivers, etc using Raspberry Pi and Arduino with \textit{serial communication} between them.
+        \end{itemize}
+
+  \item
+        \textbf{Laser Weeding}:
+        \begin{itemize}[label = - , topsep = 0pt, partopsep = 0pt]
+          \item A high-powered laser based targetting system to kill weeds from a moving robot. Involves controlling of Pan and Tilt mechanisms of Gimbals and servo motors. Developed in ROS2.
+        \end{itemize}
+
+  \item
+        \textbf{Hawkeye }:
+        \begin{itemize}[label = - , topsep = 0pt, partopsep = 0pt]
+          \item The Moderation bot of discord for Enigma - The computer Science Club Of Mahindra University. Developed using two frameworks
+        \end{itemize}
+
+  \item
+        \textbf{Automated Github Bot }:
+        \begin{itemize}[label = - , topsep = 0pt, partopsep = 0pt]
+          \item Designed a Bot for identifying commits made using Github Webapp and also auto-rejecting the same. The bot is capable of closing pull request and giving reasons for the same, as well as notify members of the organisation about any recent push or pull request by means of Webhooks
+        \end{itemize}
+  \item
+        \textbf{Penholics }:
+        \begin{itemize}[label = - , topsep = 0pt, partopsep = 0pt]
+          \item A ReactJS website for a facebook page meant to provide a platform for budding writers to showcase their talents. Hosted with custom server and nginx with manual SSL certificate auth and domain.
+        \end{itemize}
+
+
+  \item
+        \textbf{Cyclic Links Search }:
+        \begin{itemize}[label = - , topsep = 0pt, partopsep = 0pt]
+          \item Created a web crawler which crawls websites and updates list of webpages the particular webpage links to. The collected data was collected to analyze the minimum and maximum number of clicks required to go to a particular webpage from a given webpage. It determines the efficient and simplistic design of a website.
+        \end{itemize}
+
+  \item
+        \textbf{Auto-Map Generation for Games }:
+        \begin{itemize}[label = - , topsep = 0pt, partopsep = 0pt]
+          \item Modified and used \textit{Conway's Game of Life} algorithm to generate random terrains for game developers. The same framework can be utilized for random generation of pictures, simulating environments, etc.
+        \end{itemize}
+
+  \item
+        \textbf{Battleship}:
+        \begin{itemize}[label = - , topsep = 0pt, partopsep = 0pt]
+          \item Developed a framework emulating a battlefield for the famous \textit{battleship game}. Two virtual robots (programs) can compete against each other in such an environment with few set of rules. The robots manage placements of their ships, develop offensive strategies against each other to win the match.
+        \end{itemize}
+
+        % \item
+        %       \textbf{ML/DL}:
+        %       \begin{itemize}[label = - , topsep = 0pt, partopsep = 0pt]
+        %         \item \textit{Air Signature} - Users can wave their finger to
+        %       \end{itemize}
+
+        \pagebreak
+
+  \item
+        \textbf{Stadsalexa }:
+        \begin{itemize}[label = - , topsep = 0pt, partopsep = 0pt]
+          \item A prototype of Amazon Alexa and Jarvis for computer automation through voice commands made using java and netbeans.
+        \end{itemize}
+
+  \item
+        \textbf{HikariWatcher }:
+        \begin{itemize}[label = - , topsep = 0pt, partopsep = 0pt]
+          \item Hot-reloading module for discord bot developers who uses hikari. The module can be installed using pip.
+        \end{itemize}
+
+\end{enumerate}
+
+
+
+% \color[HTML]{0F00FF}{\normalsize Interests and Hobbies}  \color{gray}{\vhrulefill{1.5pt}}
+% \vspace{2mm}
+% \footnotesize
+
+% \begin{enumerate}[label = , topsep = 0pt, partopsep = 0pt]
+%   \item
+%         \color{black}
+%         Being a hodophile, I love talking to new people and understand their land and culture.
+%         Apart from that, I love wildlife Photography as well as enjoy playing the Keyboard occasionally(Musical Synthesizer).
+% \end{enumerate}
+
+\vspace{2mm}
+
+\color[HTML]{0F00FF}{\normalsize Communication}  \color{gray}{\vhrulefill{1.5pt}}
+
+\footnotesize
+\begin{enumerate}[label = , topsep = 2mm, partopsep = 0pt, itemsep = -1pt]
   \color{black}
-  \textbf{Mahindra University} \textit{\hfill Hyderabad, India}
+  \item \textbf{English:} Professional Working Proficiency
 
-  (Mahindra École Centrale) \textit{\hfill 2020-Present}
-  \begin{itemize}[label = ]
-    \item Bachelor of Technology in Computer Science, CGPA: 8.5/10
-  \end{itemize}
+  \item \textbf{Bengali:} Native
 
-  \textbf{St.Augustine's Day School}  \textit{\hfill 2018-2020}
-  \begin{itemize}[label = ]
-    \item Indian School Certificate (XII-2020), 97.5\%
-    \item Indian Certificate for Secondary Education (X-2018), 95.4\%
-  \end{itemize}
+  \item \textbf{Hindi:} Bilingual Proficiency
 
-\end{flushleft}
-
-\begin{flushleft}
-
-  \color[HTML]{0F00FF}{\LARGE{Skills}}  \color{gray}{\vhrulefill{1.5pt}}
-
-  \vspace{2mm}
-  \color{black}
-  \textbf{Languages }:
-  \begin{itemize}[label =]
-    \item C, C++, Python, Java, typescript/javascript, Embedded Programming
-  \end{itemize}
-  \textbf{Platforms and Tools }:
-  \begin{itemize}[label =]
-    \item MERN, ROS2, Flask, Git, Linux, tailwindCSS
-  \end{itemize}
-
-\end{flushleft}
+  \item \textbf{French:} A1 Level
+\end{enumerate}
 
 
-\begin{flushleft}
+\color[HTML]{0F00FF}{\normalsize Awards and Achievements}  \color{gray}{\vhrulefill{1.5pt}}
 
-  \color[HTML]{0F00FF}{\LARGE{Projects}}  \color{gray}{\vhrulefill{1.5pt}}
+\vspace{2mm}
+\footnotesize
 
-  \vspace{2mm}
-  \color{black}
-  \textbf{Penholics }:
-  \begin{itemize}[label =]
-    \item A ReactJS website for a facebook page meant to provide a platform for budding writers to showcase their talents
-  \end{itemize}
+\color{black}
+\begin{enumerate}[label = , topsep = 0mm, partopsep = 0pt, itemsep = 1mm]
+  \item
+        \textbf{Ideathon }:
+        \begin{itemize}[label = - , topsep = 0mm, partopsep = 0mm]
+          \item Winner of Ideathon-2020 themed AI for Art, sponsored by \textit{Microsoft}. Received reward of 1.25 Lakhs INR, \textit{presented by Dr. Rohini Srivastava (National Technology Officer) - Microsoft India}
+        \end{itemize}
 
-  \textbf{Laser Weeding (Ongoing Project) }:
-  \begin{itemize}[label =]
-    \item A high-powered laser based targetting system to kill weeds from a moving robot. Involves controlling of Pan and Tilt mechanisms of Gimbals and servo motors based on ROS2
-  \end{itemize}
+  \item \textbf{Savishkar}:
+        \begin{itemize}[label = - , topsep = 0mm, partopsep = 0mm]
+          \item Winner of Coding Competition in Savishkar Fest organised by \textit{Douglas Memorial Higher Secondary School}
+        \end{itemize}
 
-  \textbf{Robocon 2022 : Theme - Lagori }:
-  \begin{itemize}[label =]
-    \item Participated in Robocon 2022. Built two physical robots, one which shoots balls and another which piles up lagori (big discs). Programmed and designed all electronics, custom PCBs, drivers, etc using Raspberry Pi and Arduino with Serial Communication between them.
-  \end{itemize}
+  \item
+        \textbf{Scholarships }:
+        \begin{itemize}[label = - , topsep = 0mm, partopsep = 0mm]
+          \item Awarded Scholarship from CISCE for being among the top 1\% in ISC Examination 2020
+          \item Awarded Scholarship from School for being the top performer in ISC and ICSE examinations.
+          \item Awarded Scholarship in 2nd and 3rd Year of College worth of INR 1 Lakh.
+        \end{itemize}
 
-  \textbf{Hawkeye }:
-  \begin{itemize}[label =]
-    \item The Moderation bot of discord for Enigma - The computer Science Club Of Mahindra University
-  \end{itemize}
+\end{enumerate}
 
-  \textbf{Automated Github Bot }:
-  \begin{itemize}[label =]
-    \item Designed a Bot for identifying commits made using Github Webapp and also auto-rejecting the same. The bot is capable of closing Pull request and giving reasons for the same, as well as notify members of the organisation about any recent push or Pull request by means of Webhooks
-  \end{itemize}
-\end{flushleft}
+\vspace{2mm}
 
-\pagebreak
+\color[HTML]{0F00FF}{\normalsize Contributions}  \color{gray}{\vhrulefill{1.5pt}}
 
+\vspace{2mm}
+\footnotesize
 
+\color{black}
+\begin{enumerate}[label = , topsep = 0mm, partopsep = 0pt, itemsep = 1mm]
+  \item
+        \textbf{Representative of Media and Technical Affairs }:
+        \begin{itemize}[label = - , topsep = 0mm, partopsep = 0mm]
+          \item \textit{The Student Council - Mahindra École Centrale [2022 - Present]}
+        \end{itemize}
 
-\begin{flushleft}
-  \color[HTML]{0F00FF}{\LARGE{Interests and Hobbies}}  \color{gray}{\vhrulefill{1.5pt}}
-  \vspace{2mm}
+  \item \textbf{Projects Head}:
+        \begin{itemize}[label = - , topsep = 0mm, partopsep = 0mm]
+          \item \textit{Enigma,The Computer Science Club of Mahindra University [2021 - 2022]}
+        \end{itemize}
 
-  \color{black}
-  Being a hodophile, I love talking to new people and understand their land and culture.
-  Apart from that, I love wildlife Photography as well as enjoy playing the Keyboard occasionally(Musical Synthesizer).
+  \item
+        \textbf{Media POC }:
+        \begin{itemize}[label = - , topsep = 0mm, partopsep = 0mm]
+          \item \textit{Media Club POC (point of contact) - Mahindra University [2021 - 2022]}
+        \end{itemize}
 
-\end{flushleft}
+  \item
+        \textbf{Student Representative }:
+        \begin{itemize}[label = - , topsep = 0mm, partopsep = 0mm]
+          \item \textit{Student Representative - St. Augustine's Day School [2018 - 2020]}
+        \end{itemize}
 
+\end{enumerate}
 
-\begin{flushleft}
-  \color[HTML]{0F00FF}{\LARGE{Communication}}  \color{gray}{\vhrulefill{1.5pt}}
-  \vspace{2mm}
-
-  \color{black}
-  \fontsize{12pt}{20pt}\selectfont
-  \textbf{English:} Professional Working Proficiency
-
-  \textbf{Bengali:} Native
-
-  \textbf{Hindi:} Bilingual Proficiency
-
-  \textbf{French:} Junior Secondary School
-
-\end{flushleft}
-
-
-\begin{flushleft}
-
-  \color[HTML]{0F00FF}{\LARGE{Awards and Achievements}}  \color{gray}{\vhrulefill{1.5pt}}
-
-  \vspace{2mm}
-
-  \color{black}
-  \textbf{Ideathon }:
-  \begin{itemize}[label =]
-    \item Winner of Ideathon-2020 themed AI for Art, sponsored by Microsoft. Received reward of 1.25 Lakhs INR, presented by Dr. Rohini Srivastava (National Technology Officer) - Microsoft India
-  \end{itemize}
-
-  \textbf{Savishkar}:
-  \begin{itemize}[label =]
-    \item Winner of Coding Competition in Savishkar Fest organised by Douglas Memorial Higher Secondary School
-    \item Received honor and memento for being the Student Representative of my School
-  \end{itemize}
-
-  \textbf{Scholarships }:
-  \begin{itemize}[label =]
-    \item Awarded Scholarship from CISCE for being among the top 1\% in ISC Examination 2020
-    \item Awarded Scholarship from School for being the top performer in ISC and ICSE examinations.
-    \item Awarded Scholarship in 2nd Year of College worth of INR 1 Lakh.
-  \end{itemize}
-
-\end{flushleft}
 
 \end{document}
